@@ -1,0 +1,43 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "choice bot",
+      "types": [
+
+      ],
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "ChoiceIntent",
+          "slots": [
+            {
+              "name": "opts",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "either {opts}",
+            "choose {opts}"
+          ]
+        }
+      ]
+    }
+  }
+}
